@@ -291,10 +291,10 @@ div#srch>a {
 }
 
 div#srch>a>img {
-    min-width: 5vw;
-    max-width: 10vw;
-    min-height: 5vh;
-    max-height: 10vw;
+    min-width: 20px;
+    max-width: 40px;
+    min-height: 20px;
+    max-height: 40px;
     margin-bottom: 5px;
     
 }
@@ -306,9 +306,9 @@ div#srch>#closebutton {
 }
 
 div#srch>#closebutton>img {
-    min-width: 3.5vw;
-    max-width: 5vw;
-    min-height: 3.5vh;
-    max-height: 5vw;
+    min-width: 20px;
+    max-width: 40px;
+    min-height: 20px;
+    max-height: 40px;
     
 }
