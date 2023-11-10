@@ -1,80 +1,105 @@
-@keyframes float {
+@keyframes aumentar {
     0%{
-        transform: translateX(0px);
+        transform: translateX(-5px);
     }50%{
-        transform: translateX(7px);
+        transform: translateX(5px);
     }100%{
-        transform: translateX(0px);
+        transform:translateX(0px)
     }
-    
+
 }
-@keyframes navig{
-    0%{
+
+
+@keyframes navig {
+    0% {
         width: 0%;
 
-    }100%{width: 100%;
-     
+    }
+
+    100% {
+        width: 100%;
+
     }
 }
-@keyframes navig2{
-    0%{
-     height: 5px;
 
-    }80%{
+@keyframes navig2 {
+    0% {
+        height: 5px;
+
+    }
+
+    80% {
         height: 5px;
     }
-    100%{
+
+    100% {
         height: 24px;
-     
+
     }
 }
-@keyframes noone{
-    0%{
+
+@keyframes noone {
+    0% {
         display: none;
-    }95%{
+    }
+
+    95% {
         display: none;
-    }100%{
+    }
+
+    100% {
         display: flex;
     }
 }
-@keyframes bigger {
-    0%{
-        font-size: 1em; 
 
-    }50%{
-        font-size: 1.10em ;
+@keyframes bigger {
+    0% {
+        font-size: 1em;
+
+    }
+
+    50% {
+        font-size: 1.10em;
         margin: 0px;
-    }100%{
-        font-size: 1em ;
+    }
+
+    100% {
+        font-size: 1em;
     }
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
 
-@font-face{
+@font-face {
     font-family: SF-PRO;
-    src:url("fonts/SFPRODISPLAYREGULAR.OTF")format(("opentype")),
-    url("fonts/SFPRODISPLAYBOLD.OTF")format("opentype")
+    src: url("fonts/SFPRODISPLAYREGULAR.OTF")format(("opentype")),
+        url("fonts/SFPRODISPLAYBOLD.OTF")format("opentype")
 }
-body{
+
+body {
     margin: 0px;
 }
-*{
+
+* {
     font-family: SF-PRO, sans-serif
 }
-header{
-    
+
+header {
+
     background-color: #121212;
     display: flex;
     flex-direction: column;
 
 }
-div#line{
+
+div#line {
     background-color: white;
     height: 1px;
     animation: navig ease-in 0.8s;
 
 }
-div#logo{
+
+div#logo {
     height: 9vh;
     display: flex;
     justify-content: center;
@@ -82,26 +107,28 @@ div#logo{
     background: black;
     margin-bottom: 1px;
 }
-#lg{
+
+#lg {
     max-height: 35px;
     max-width: 30px;
-    
+
 }
 
-nav{
+nav {
     position: sticky;
     top: 0px;
     animation: navig2 ease-in 1.2s;
     background-color: #000000;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 24px;  
+    height: 24px;
     padding-top: 5px;
-    padding-bottom: 5px;  
+    padding-bottom: 5px;
 }
-nav>a{
-    
+
+nav>a {
+
     font-size: 2.5vw;
     text-decoration: none;
     color: white;
@@ -110,38 +137,45 @@ nav>a{
     justify-content: center;
     animation: noone ease-in 1.2s;
 }
-nav>a>p{
+
+nav>a>p {
     margin: 0px;
-    margin-right: 15px;
+    margin-right: 2vw;
 }
-nav>a>p:hover{
+
+nav>a>p:hover {
     text-decoration: underline;
     color: rgb(182, 182, 182);
 }
 
 /* MAIN */
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;   
+    flex-direction: column;
 
 }
-article>h1{
-    max-width:300px;
+
+article>h1 {
+    max-width: 300px;
     font-size: 6vw;
     margin: 0px;
     margin-bottom: 10px;
     text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.233);
 }
-article>h1,p{
+
+article>h1,
+p {
     text-align: center;
 
 }
-article>p{
-font-size: 1.5em;
+
+article>p {
+    font-size: 1.5em;
 }
-article{
+
+article {
     min-width: 320px;
     max-width: 800px;
     display: flex;
@@ -149,45 +183,51 @@ article{
     justify-content: center;
     flex-direction: column;
 }
-#img{
+
+#img {
     width: 100%;
-    max-width: 800px ;
+    max-width: 800px;
 }
-main>h1{
+
+main>h1 {
     font-size: 0.8em;
 
 }
 
 
-#compra{
-    
+#compra {
+
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    
+
     height: 30px;
-    
-}
-#compra>a{
-    color: #2997FF ;
 
 }
-#compra>a:hover{
-    /*animation: float ease-in-out 0.3s;*/
+
+#compra>a {
+    color: #2997FF;
+
+}
+
+#compra>a:hover {
     animation: bigger ease-in-out 0.3s;
-    
-    color:  #2F25DC ;
-    
+
+    color: #2F25DC;
+
 }
-#compra>a:active{
-    color:#31DBD2 ;
+
+#compra>a:active {
+    color: #31DBD2;
 }
-#compra>a>p{
+
+#compra>a>p {
     margin: 0px;
 }
-.externo::after{
+
+.externo::after {
     content: '\00A0\1F517';
-    
+
 }
 
 
@@ -200,10 +240,11 @@ main>h1{
 */
 
 
-div#srch{
+div#srch {
     background: rgb(0, 0, 0);
     position: fixed;
     top: 0px;
+    flex-direction: column;
     visibility: hidden;
     width: 100vw;
     height: 80.2px;
@@ -214,16 +255,20 @@ div#srch{
     border-radius: 0px 0px 10px 0px;
 
 }
-div#srch > input#busca{
-    height: 4vh;
-    width: 200px;
-    border-radius: 10px;
+
+div#srch>input#busca {
+    height: 8vh;
+    width: 50vw;
+    border-radius: 25px;
     background: transparent;
     border-color: white;
     color: white;
-    
+    font-size: 2em;
+    display: none;
+    text-indent: 15px;
 }
-div#srch > input#btn {
+
+div#srch>input.btn {
     border: 2px solid white;
     border-radius: 100%;
     margin: 0px;
@@ -234,10 +279,36 @@ div#srch > input#btn {
     right: 50px;
     background: black;
     color: white;
-    font-family: 'Sono',monospace;
+    font-family: 'Sono', monospace;
     font-size: 1.5em;
+
 }
-div#srch > input#btn:hover{
+
+div#srch>input.btn:hover {
     background: rgb(32, 32, 32);
     border-color: #0e0e0e;
+}
+
+div#srch>a {
+    position: absolute;
+    left: 15px;
+}
+
+div#srch>a>img {
+    width: 6vw;
+    height: 11vh;
+    margin-bottom: 5px;
+    
+}
+
+div#srch>#closebutton {
+    display: none;
+    position: absolute;
+    left: 15px;
+}
+
+div#srch>#closebutton>img {
+    width: 5.5vw;
+    height: 9.5vh;
+
 }
