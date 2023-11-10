@@ -10,7 +10,7 @@
 <body>
     <header>
         <div id="logo">
-            <a href="apple.html">
+            <a href="index.html">
                 <picture >
                     <source media="(max-width: 600px )" srcset="img/applepq.png" type="image/png">
                     <source media="(max-width: 1000px)" srcset="img/apple.png" type="image/png">
@@ -20,17 +20,29 @@
         </div>
         <div id="line"></div>
         <nav>
-            <a id="search" href="#"><p>SEARCH</p></a>
+            <a id="search" onclick="searche()" href="#"><p>SEARCH</p></a>
             <a id="menu" href="#"><p>MENU</p></a>
             <a id="store" href="#"><p>STORE</p></a>
         </nav>
     </header>
+
+        <div id="srch">
+        
+        
+        
+            <label for="busca"><img src="img/srch.jpg" alt=""></label>
+            <input placeholder="" type="text" name="busca" id="busca">
+       
+            <input id="btn" onclick="fechar()" type="button" value="x">
+        </div>
+ 
+
     <main>
         <h1>Apple Inc.</h1>
         <article>
-            <h1>IPhone 15 Pro</h1>
+            <h1>IPhone 15<br/> Pro</h1>
             <p>Titânio. Muito robusto. Muito leve.
-                Muito Pro.</p>
+                <br/>Muito Pro.</p>
                 <div id="compra">
                     
                     <a href="#"><p>Saiba Mais ></p></a>
