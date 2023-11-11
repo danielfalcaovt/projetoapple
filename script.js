@@ -22,21 +22,30 @@ function appear() {
     let pesquisa = document.querySelector("input#busca")
     let sumirbotao = document.querySelector("a#appearr")
     let aparecerbotao = document.querySelector("a#closebutton")
+//DELAY ANTI-FLOODING
+    setTimeout(() =>{
     sumirbotao.style.display = "none"
     aparecerbotao.style.display = "flex"
     pesquisa.style.display = "flex"
     pesquisa.focus()
-    aparecerbotao.style.animation = "aumentar ease-in-out 0.3s"
-
-
+    aparecerbotao.style.animation = "aumentar ease-in-out 0.3s"},80)
+    
 }
 function deappear() {
     let pesquisa = document.querySelector("input#busca")
     let aparecerbotao = document.querySelector("a#appearr")
     let sumirbotao = document.querySelector("a#closebutton")
+    //DELAY ANTI-FLOODING
+    setTimeout(() =>{
     sumirbotao.style.display = "none" 
     aparecerbotao.style.display = "flex"
     pesquisa.style.display = "none"
-    aparecerbotao.style.animation = "aumentar ease-in-out 0.3s"
+    aparecerbotao.style.animation = "aumentar ease-in-out 0.3s"},80)
+   
 }
 
+function menu() {
+    let 
+    
+
+}
