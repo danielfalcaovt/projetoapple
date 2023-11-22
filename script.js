@@ -43,9 +43,4 @@ function deappear() {
     aparecerbotao.style.animation = "aumentar ease-in-out 0.3s"},80)
    
 }
-
-function menu() {
-    let 
-    
-
-}
+ 
