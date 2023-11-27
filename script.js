@@ -1,46 +1,63 @@
 // AO CLICAR
 function searche(){
 let barrapesquisa = document.querySelector("div#srch")
-let menu = document.querySelector("header")
+let menuu = document.querySelector("header")
 barrapesquisa.style.visibility = "visible"
 // VISIBILITY HIDDEN DA DIV #SRCH
-    menu.style.visibility = "hidden"
-
-    deappear()
-  
+    menuu.style.visibility = "hidden"
 // SE TRUE =FALSE
 // SE FALSE  =TRUE
+let pesquisa = document.querySelector("input#busca")
+//FUNÇAO MENU
+let nav = document.querySelector("nav")
+    nav.style.display = "flex"
+
+
+//DELAY ANTI-FLOODING
+setTimeout(() =>{
+pesquisa.style.display = "flex"
+pesquisa.style.animation = "abertura ease-in-out 1.1s"
+pesquisa.focus()},80)
 }
 function fechar() {
     let barrapesquisa = document.querySelector("div#srch")
-    let menu = document.querySelector("header")
-    menu.style.visibility = "visible"
-    barrapesquisa.style.visibility = "hidden"
-
-}
-function appear() {
+    let menuu = document.querySelector("header")
+    menuu.style.visibility = "visible"
     let pesquisa = document.querySelector("input#busca")
-    let sumirbotao = document.querySelector("a#appearr")
-    let aparecerbotao = document.querySelector("a#closebutton")
-//DELAY ANTI-FLOODING
-    setTimeout(() =>{
-    sumirbotao.style.display = "none"
-    aparecerbotao.style.display = "flex"
-    pesquisa.style.display = "flex"
-    pesquisa.focus()
-    aparecerbotao.style.animation = "aumentar ease-in-out 0.3s"},80)
+    //FUNÇAO MENU
+    let nav = document.querySelector("nav")
+    pesquisa.style.animation = ""
+    pesquisa.style.animation = "fechamento ease-in-out 0.5s"
     
-}
-function deappear() {
-    let pesquisa = document.querySelector("input#busca")
-    let aparecerbotao = document.querySelector("a#appearr")
-    let sumirbotao = document.querySelector("a#closebutton")
     //DELAY ANTI-FLOODING
     setTimeout(() =>{
-    sumirbotao.style.display = "none" 
-    aparecerbotao.style.display = "flex"
-    pesquisa.style.display = "none"
-    aparecerbotao.style.animation = "aumentar ease-in-out 0.3s"},80)
-   
+        barrapesquisa.style.visibility = "hidden"
+        nav.style.display = "none"
+        pesquisa.style.display = "none"
+        
+        
+    },400)
+        
+    }
+
+
+
+function menu(){
+    let links = document.getElementsByClassName("linkss")
+    let nav = document.querySelector("nav")
+    if (nav.style.display == ""){
+        nav.style.display = "flex"
+        links.style.animation = ""
+        links.style.animation = "abertura ease-in-out 0.8s"
+    }else{
+        links.style.animation = ""
+        links.style.animation = "fechamento ease-in-out 0.8s"
+        setTimeout(() => {
+            
+            nav.style.display = ""
+        }, 500);
+    
+    }
+
 }
  

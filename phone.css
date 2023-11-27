@@ -1,5 +1,5 @@
-div#comments{
-    font-size: 1rem;
+ div#comments{
+    font-size: 1.2rem;
     line-height: 1.5rem;
 }
 article>h1{
@@ -11,24 +11,20 @@ article>h1{
     font-size: 1rem;
 
 }
-nav{
-    justify-content: space-evenly;
-    flex: 1;
-}
-nav>a{
+#menu{
+    margin: 0px;
     font-size: 1.5rem;
 }
-header{
-    flex-direction: row;
-    position: relative;
-    align-items: center;
-    background-color: black;
+#appear{
+    margin: 0px;
+}
+div#srch{
+    height: 100vh;
+}
+.btn{
 
 }
-#lg{
-    object-fit: contain;
-    height: 30px;
-    width:35px;
-    align-self: flex-start;
-    margin-left: 10px;
+
+#busca{
+
 }

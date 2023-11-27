@@ -11,29 +11,29 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <a href="index.html">
-                <picture >
-                    <source media="(max-width: 600px )" srcset="img/applepq.png" type="image/png">
-                    <source media="(max-width: 1000px)" srcset="img/apple.png" type="image/png">
-                    <img id="lg" src="img/apple.png" alt="">
-                </picture>
-            </a>
-        </div>
-        <div id="line"></div>
-        <nav>
-            <a id="search" onclick="searche()" href="#"><p>SEARCH</p></a>
+        <div class="grid-container">
             <a id="menu" onclick="menu()"href="#"><p>MENU</p></a>
-            <a id="store" href="#"><p>STORE</p></a>
+            <div id="logo">
+                <a href="index.html">
+                    <picture>
+                        <source media="(max-width: 600px )" srcset="img/applepq.png" type="image/png">
+                        <source media="(max-width: 1000px)" srcset="img/apple.png" type="image/png">
+                        <img draggable="true" id="lg" src="img/apple.png" alt="">
+                    </picture>
+                </a>
+                
+            </div>
+            <a onclick="searche()" href="#" id="appearr"><img id="imgbusca" src="img/srch.jpg" alt=""></a>
+        </div>
+        <nav>
+            <a class="linkss" href="#"><p>IPAD</p></a>
+            <a class="linkss" href="#"><p>MAC</p></a>
+            <a class="linkss" href="#"><p>IPOD</p></a>
         </nav>
     </header>
 
         <div id="srch">
-        
-        
-            <a onclick="deappear()" id="closebutton" href="#"><img src="img/closebtn.png" alt=""></a>
-            <a onclick="appear()" href="#" id="appearr"><img id="imgbusca" src="img/srch.jpg" alt=""></a>
-            <input placeholder="" type="text" name="busca" id="busca">
+            <input placeholder="Buscar" type="text" name="busca" id="busca">
        
             <input class="btn" onclick="fechar()" type="button" value="x">
         </div>
