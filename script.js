@@ -41,22 +41,16 @@ function fechar() {
     }
 
 
-
-function menu(){
-    let links = document.getElementsByClassName("linkss")
-    let nav = document.querySelector("nav")
-    if (nav.style.display == ""){
-        nav.style.display = "flex"
-        links.style.animation = ""
-        links.style.animation = "abertura ease-in-out 0.8s"
-    }else{
-        links.style.animation = ""
-        links.style.animation = "fechamento ease-in-out 0.8s"
-        setTimeout(() => {
-            
-            nav.style.display = ""
-        }, 500);
     
+    function menu(){
+        let links = document.getElementsByClassName("linkss")
+        let nav = document.querySelector("nav")
+    if (nav.style.display == "none"){
+        nav.style.display = "flex"
+        links.style.animation = "abertura ease-in-out 0.8s" 
+        
+    }else{
+            nav.style.display = "none"
     }
 
 }
