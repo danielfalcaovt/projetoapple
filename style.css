@@ -1,4 +1,19 @@
-
+@keyframes opemn{
+    0%{  transform: rotate(0deg)
+    }50%{
+    transform: rotate(22.5deg);}
+    100%{
+        transform: rotate(45deg);
+    }
+}
+@keyframes close{
+    0%{transform: rotate(45deg);
+    }50%{transform: rotate(22.5deg)
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 
 @keyframes bigger{
     0%{
@@ -82,6 +97,7 @@ div#logo {
     padding: 10px 0px;
     max-height: 45px;
     max-width: 40px;
+
 }
 
 nav {
@@ -121,13 +137,14 @@ nav>a>p:hover {
     color: white;
     text-align: center;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
     margin-right: 10px;
     flex:1;
 }
 #menu:hover{
-    text-decoration: underline;
+    cursor: pointer;
     color: rgb(182, 182, 182);
 }
 
@@ -312,3 +329,32 @@ div#srch>#closebutton>img {
     height: 60px;
     }
 
+.hdn{
+
+    display: flex;
+
+}
+
+
+/* ANIMACOES BOTAO FECHAMENTO NAV*/
+.line{
+    background: white;
+    height: 6px;
+    width: 40px;
+    transition-duration: 0.3s;
+
+}
+#menu:hover > div.line{
+    background-color: rgb(206, 206, 206);
+}
+#firstline{
+    margin-bottom: 8px;
+}
+.rotatex{
+    transform: rotate(45deg);
+    }
+.rotatey{
+    transform: rotate(-45deg);
+    translate: 0px -14px;
+
+}

@@ -39,19 +39,14 @@ function fechar() {
     },400)
         
     }
-
-
-    
     function menu(){
-        let links = document.getElementsByClassName("linkss")
         let nav = document.querySelector("nav")
-    if (nav.style.display == "none"){
-        nav.style.display = "flex"
-        links.style.animation = "abertura ease-in-out 0.8s" 
-        
-    }else{
-            nav.style.display = "none"
-    }
+        let line = document.querySelector("div#firstline")
+        let line2 = document.querySelector("div#secondline")
+        line.classList.toggle('rotatex')
+        line2.classList.toggle("rotatey")        
+        nav.classList.toggle('hdn')
+       
 
 }
  
