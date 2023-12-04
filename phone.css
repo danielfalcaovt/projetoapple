@@ -6,6 +6,9 @@ article>h1{
     font-size: 4rem;
 
 }
+h2{
+    font-size: 1.2rem;
+}
 #compra > a{
     margin-top: 10px;
     font-size: 1rem;
@@ -21,10 +24,9 @@ article>h1{
 div#srch{
     height: 100vh;
 }
-.btn{
-
+#article2 {
+    height: 100vh;
 }
-
-#busca{
-
+#article2 >picture> img{
+    width: 250px;
 }

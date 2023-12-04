@@ -171,7 +171,8 @@ article>h1,p {
 }
 
 div#comments{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-align: center;
     line-height: 4rem;
 }
 
@@ -184,7 +185,7 @@ article {
     flex-direction: column;
 }
 
-#img {
+.img {
     width: 100%;
     max-width: 800px;
 }
@@ -195,35 +196,52 @@ main>h1 {
 }
 
 
-#compra {
+.compra {
 
     display: flex;
     justify-content: center;
     gap: 60px;
 }
 
-#compra>a {
+.compra>a {
     font-size: 2rem;
     color: #2997FF;
     text-shadow: rgba(0, 0, 0, 0.192) 4px 3px 4px;
 }
 
-#compra>a:hover {
+.compra>a:hover {
     transition-duration: 0.1s;
     animation: bigger ease-in-out 0.4s ;
     color: #2F25DC;
 
 }
 
-#compra>a:active {
+.compra>a:active {
     color: #31DBD2;
 }
 
-#compra>a>p {
+.compra>a>p {
     margin: 0px;
 }
+#article2{
+    color: white;
+    width: 100%;
+    background: black;
 
+}
+#article2>h1{
+    font-size: 5rem;
 
+}
+#article2>h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#article2 >picture> img{
+    width: 400px;
+
+}
 
 
 
