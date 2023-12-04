@@ -9,9 +9,9 @@ article>h1{
 h2{
     font-size: 1.2rem;
 }
-#compra > a{
+.compra > a{
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.4rem;
 
 }
 #menu{
@@ -25,7 +25,7 @@ div#srch{
     height: 100vh;
 }
 #article2 {
-    height: 100vh;
+    height: 100%;
 }
 #article2 >picture> img{
     width: 250px;

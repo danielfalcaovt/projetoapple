@@ -68,6 +68,7 @@ html{
 }
 body {
     margin: 0px;
+    height: 100vh;
 }
 
 * {
@@ -225,7 +226,9 @@ main>h1 {
 }
 #article2{
     color: white;
-    max-width: 100%;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
     background: black;
 
 }
