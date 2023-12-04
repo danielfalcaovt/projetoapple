@@ -225,7 +225,7 @@ main>h1 {
 }
 #article2{
     color: white;
-    width: 100%;
+    width: 100vw;
     background: black;
 
 }
