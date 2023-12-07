@@ -30,3 +30,18 @@ div#srch{
 #article2 >picture> img{
     width: 250px;
 }
+
+.topmodal{
+    font-size: 0.8rem;
+}
+.modalclose{
+    height: 40px;
+    transform: translate(0px,-50%);
+}
+
+.alertcontent{
+    height: 100%;
+}
+.alertcontent > p{
+    font-size: 0.65rem;
+}

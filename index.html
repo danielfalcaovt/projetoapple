@@ -41,7 +41,33 @@
             <input class="btn" onclick="fechar()" type="button" value="x">
         </div>
  
+        <div class="topmodal">
+            <div class="content">
+                    <p>Pague seu novo iPhone em até 12 parcelas ou economize 10% nos pagamentos à vista.</p>
+                    <a target="_blank" href="https://apple.com"><p>Saiba Mais ></p></a>
+                    <img class="modalclose" src="./img/closebutton.png">
+                </div>
+        </div>
 
+        <div class="alertmodal">
+            <div class="alertcontent">
+                <img class="alertclose" src="./img/closebutton.png" alt="botao para fechar">
+                <h1>Caros usuários,</h1>
+
+                  <p>
+                    Gostaríamos de informar que este site é um projeto dedicado exclusivamente ao estudo e prática de desenvolvimento web. Ele foi concebido como uma iniciativa educacional para aprimorar habilidades técnicas, especialmente aquelas relacionadas à criação e manutenção de sites.<br/>
+                    
+                    É importante salientar que este projeto é uma produção independente e não possui vínculos oficiais com a Apple Inc. Apesar de creditarmos a Apple pela inspiração em design e experiência do usuário, queremos deixar claro que este site não é um produto oficial da Apple.<br/>
+                    
+                    Ao explorar este site, esperamos que os usuários tenham uma experiência educacional positiva e possam aproveitar os elementos de design e funcionalidades que foram implementados para fins de aprendizado em desenvolvimento web.<br/>
+                    
+                    Agradecemos por sua compreensão e respeito ao propósito educacional deste projeto. Se você tiver feedback ou sugestões construtivas, ficaremos felizes em ouvi-los para melhorar ainda mais esta plataforma de estudo.<br/>
+                    
+                    Atenciosamente,<br/>
+
+                    Daniel Falcão.</p>
+            </div>
+        </div>
     <main>
         <h1>Apple Inc.</h1>
         <article>
@@ -52,9 +78,9 @@
             </div>
                 <div class="compra">
                     
-                    <a href="#"><p>Saiba Mais ></p></a>
+                    <a target="_blank" href="https://apple.com"><p>Saiba Mais ></p></a>
                 
-                    <a href="#" ><p>Compre ></p></a>
+                    <a target="_blank" href="https://apple.com" ><p>Compre ></p></a>
            
                 </div>
         
@@ -69,7 +95,7 @@
                 <h1>iMac</h1>
                 <h2>Agora a potência<br/> dá o tom.</h2>
                                 <div class="compra">
-                        <a href="#"><p>Saiba Mais ></p></a>
+                        <a href="#top"><p id="scroll">Saiba Mais ></p></a>
 
                     </div>
                     <picture draggable="true">
@@ -84,8 +110,8 @@
     <footer>
 
     </footer>
-
-<script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
