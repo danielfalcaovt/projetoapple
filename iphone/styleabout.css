@@ -1,0 +1,54 @@
+div#logo{
+    background: white;
+}
+header{
+    background: white;
+    position: relative;
+}
+.grid-container{
+    background-color: white;
+}
+
+.backbutton{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#line1{
+    width: 28px;
+    background: black;
+    height: 10px;
+    transform: rotate(42deg);
+    margin-left: 15px;
+    position: relative;
+    top: 50%;
+    border-top-left-radius: 15px;
+}
+#line2{
+    width: 28px;
+    background: black;
+    height: 10px;
+    transform: rotate(-42deg);
+    margin-left: 15px;
+    position: relative;
+    top: 33%;
+    border-bottom-left-radius: 15px;
+}
+.line{
+    background-color: black;
+}
+#menu:hover > div.line{
+    background-color: rgb(66, 66, 66);
+}
+nav{
+    background-color: white;
+}
+nav a{
+
+    color: black;
+}
+nav a p:hover{
+    color:  rgb(66, 66, 66);
+}

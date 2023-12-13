@@ -435,14 +435,14 @@ div#srch>#closebutton>img {
 }
 .alertcontent>h1{
     text-align: left;
-    font-size: 1rem;
+    font-size: 3rem;
     margin-left: 15px;
     margin-top: 15px;
 }
 .alertcontent > p{
     margin-left: 15px;
     margin-top: 30px;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     text-align: left;
 }
 .alertclose{
