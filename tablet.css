@@ -1,11 +1,9 @@
- div#comments{
-    line-height: 1.5rem;
-}
-h2{
-    font-size: 1rem;
+div#comments{
+    font-size: 2rem;
+   
 }
 article>h1{
-    font-size: 3rem;
+    font-size: 6rem;
 
 }
 .compra > a{
@@ -24,19 +22,7 @@ div#srch{
     height: 100vh;
 }
 #article2 {
-    height: 120vh;
-}
-#article2 >picture> img{
-    width: 250px;
-}
-.img{
-    margin-bottom: 100px;
-}
-#article2 h2{
-    font-size: 2rem;
-}
-#article2 h1{
-    font-size: 4rem;
+    height: 150vh;
 }
 
 .topmodal{
@@ -51,6 +37,6 @@ div#srch{
     height: 100%;
 }
 .alertcontent > p{
-    font-size: 0.80rem;
+    font-size: 1rem;
     max-width: 80%;
 }
